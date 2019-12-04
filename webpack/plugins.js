@@ -7,8 +7,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const isDevelopment = process.env.NODE_ENV === 'development'
 
 const HtmlPlugin = new _HtmlWebPackPlugin({
-  template: './public/index.html',
-  favicon: './public/favicon.ico',
+  template: path.resolve(__dirname, './../public/index.html'),
+  favicon: path.resolve(__dirname, './../public/favicon.ico'),
   filename: 'index.html'
 })
 

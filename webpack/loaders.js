@@ -1,5 +1,5 @@
 const path = require('path')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const isDevelopment = process.env.NODE_ENV === 'development'
 
 const JSLoader = {
@@ -53,7 +53,6 @@ const SASSLoader = {
     {
       loader: 'sass-loader',
       options: { 
-        // importLoaders: 1,
         sourceMap: isDevelopment
       }
     }
@@ -64,8 +63,6 @@ const SVGLoader = {
   test: /\.svg$/,
   loader: 'svg-inline-loader'
 }
-
-
 
 module.exports = {
   JSLoader: JSLoader,
