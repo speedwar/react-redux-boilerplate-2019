@@ -1,8 +1,8 @@
 import { demoConstants } from 'rx/constants'
 
 const initialState = {
-  isDempRequest: null,
-  isDempSuccess: null,
+  isDemoRequest: null,
+  isDemoSuccess: null,
   isDemoFailure: null,
   demo: null,
   demoError: null
@@ -13,8 +13,8 @@ export function demo(state = initialState, action) {
     case demoConstants.DEMO_REQUEST:
       return {
         ...state,
-        isDempRequest: true,
-        isDempSuccess: null,
+        isDemoRequest: true,
+        isDemoSuccess: null,
         isDemoFailure: null,
         demo: null,
         demoError: null
@@ -22,8 +22,8 @@ export function demo(state = initialState, action) {
     case demoConstants.DEMO_SUCCESS:
       return {
         ...state,
-        isDempRequest: null,
-        isDempSuccess: true,
+        isDemoRequest: null,
+        isDemoSuccess: true,
         isDemoFailure: null,
         demo: action.data,
         demoError: null
@@ -31,8 +31,8 @@ export function demo(state = initialState, action) {
     case demoConstants.DEMO_FAILURE:
       return {
         ...state,
-        isDempRequest: null,
-        isDempSuccess: null,
+        isDemoRequest: null,
+        isDemoSuccess: null,
         isDemoFailure: true,
         demoError: action.error
       }
