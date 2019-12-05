@@ -1,8 +1,8 @@
-module.exports = {
+{
   "plugins": [
     "stylelint-scss"
   ],
-  rules: {
+  "rules": {
     "at-rule-no-unknown": null,
     "block-no-empty": true,
     "color-no-invalid-hex": true,

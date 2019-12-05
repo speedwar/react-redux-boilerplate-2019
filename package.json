@@ -79,7 +79,6 @@
     "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",
     "react-test-renderer": "^16.12.0",
-    "recompose": "^0.30.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.1",
     "stylelint": "^12.0.0",
